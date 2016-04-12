@@ -25,6 +25,8 @@ Copy the XCTest and IDEBundleInjection frameworks into the special `AppleInterna
 folder under WatchSimulator.platform.
 
 ```
+cd /Applications/Xcode.app/Contents/Developer/Platforms
+
 mkdir -p WatchSimulator.platform/Developer/AppleInternal/Library/Frameworks
 mkdir -p WatchSimulator.platform/Developer/AppleInternal/Library/PrivateFrameworks
 
@@ -35,7 +37,7 @@ cp iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/IDEBundleInjecti
 This gives a warning, but gets the build to work.
 
 ```
-ld: warning: URGENT: building for watchOS simulator, but linking against dylib (/Applications/Xcode7.3.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/AppleInternal/Library/Frameworks/XCTest.framework/XCTest) built for iOS. Note: This will be an error in the future.
+ld: warning: URGENT: building for watchOS simulator, but linking against dylib (/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/AppleInternal/Library/Frameworks/XCTest.framework/XCTest) built for iOS. Note: This will be an error in the future.
 ```
 
 ## License
