@@ -29,6 +29,8 @@
 		F870AECB1CBC8DD800846FFE /* WatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F870AEC41CBC8DD800846FFE /* WatchFramework.framework */; };
 		F870AECC1CBC8DD800846FFE /* WatchFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F870AEC41CBC8DD800846FFE /* WatchFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F870AEDA1CBC900500846FFE /* WatchFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870AED91CBC900500846FFE /* WatchFrameworkTests.swift */; };
+		F870AEE51CBC970000846FFE /* WatchFrameworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870AEE41CBC970000846FFE /* WatchFrameworkClass.swift */; };
+		F870AEE61CBC99C900846FFE /* WatchFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F870AEC41CBC8DD800846FFE /* WatchFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,7 @@
 		F870AED71CBC900500846FFE /* WatchFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F870AED91CBC900500846FFE /* WatchFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFrameworkTests.swift; sourceTree = "<group>"; };
 		F870AEDB1CBC900500846FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F870AEE41CBC970000846FFE /* WatchFrameworkClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchFrameworkClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F870AEE61CBC99C900846FFE /* WatchFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +323,7 @@
 			children = (
 				F870AEC61CBC8DD800846FFE /* WatchFramework.h */,
 				F870AEC81CBC8DD800846FFE /* Info.plist */,
+				F870AEE41CBC970000846FFE /* WatchFrameworkClass.swift */,
 			);
 			path = WatchFramework;
 			sourceTree = "<group>";
@@ -716,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F870AEE51CBC970000846FFE /* WatchFrameworkClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "WatchApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phatblat.WatchApp.watchkitapp.watchkitextension;
@@ -899,6 +906,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "WatchApp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.phatblat.WatchApp.watchkitapp.watchkitextension;
@@ -1042,6 +1050,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1054,6 +1063,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1065,6 +1075,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

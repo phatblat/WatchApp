@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import WatchFramework
 
 class WatchFrameworkTests: XCTestCase {
     
@@ -20,9 +21,9 @@ class WatchFrameworkTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testHello() {
+        let watchFrameworkClass = WatchFrameworkClass()
+        watchFrameworkClass.hello()
     }
     
     func testPerformanceExample() {
