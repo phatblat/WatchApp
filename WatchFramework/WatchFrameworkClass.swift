@@ -7,5 +7,5 @@
 //
 
 class WatchFrameworkClass {
-    func hello() { print("hello") }
+    func hello() { print("hello from watch framework") }
 }
