@@ -80,16 +80,6 @@
                ReferencedContainer = "container:WatchApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F870AED61CBC900500846FFE"
-               BuildableName = "WatchFrameworkTests.xctest"
-               BlueprintName = "WatchFrameworkTests"
-               ReferencedContainer = "container:WatchApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
